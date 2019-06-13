@@ -8,14 +8,13 @@ describe('Scoring', function () {
       position: 'QB',
       team: 'Kansas City',
       stats: {
-        passing: {
-          attempts: 25,
-          completions: 18,
-          yards: 363,
-          touchdowns: 3,
-          interceptions: 0
+        passing: { attempts: 25,completions: 18,yards: 363,touchdowns: 3,interceptions: 0},
+        rushing: { attempts: 3, yards: 22, touchdowns: 1, fumbles: 0 },
+        receiving: { receptions: 0, yards: 00, touchdowns: 0, fumbles: 0 },
+        return: {
+          kickreturn: { returns: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+          puntreturn: { returns: 0, yards: 0, touchdowns: 0, fumbles: 0 },
         },
-        rushing: { attempts: 3, yards: 22, touchdowns: 1, fumbles: 0 }
       }
     }
 
@@ -30,6 +29,7 @@ describe('Scoring', function () {
       position: 'RB',
       team: 'Buffalo',
       stats: {
+        passing: { attempts: 0,completions: 0,yards: 0,touchdowns: 0,interceptions: 0},
         rushing: { attempts: 18, yards: 103, touchdowns: 2, fumbles: 0 },
         receiving: { receptions: 6, yards: 37, touchdowns: 0, fumbles: 0 },
         return: {
@@ -50,6 +50,7 @@ describe('Scoring', function () {
       position: 'WR',
       team: 'Seattle',
       stats: {
+        passing: { attempts: 0,completions: 0,yards: 0,touchdowns: 0,interceptions: 0},
         rushing: { attempts: 0, yards: 0, touchdowns: 0, fumbles: 0 },
         receiving: { receptions: 6, yards: 91, touchdowns: 1, fumbles: 0 },
         return: {
@@ -70,7 +71,13 @@ describe('Scoring', function () {
       position: 'TE',
       team: 'New England',
       stats: {
+        passing: { attempts: 0,completions: 0,yards: 0,touchdowns: 0,interceptions: 0},
+        rushing: { attempts: 0, yards: 0, touchdowns: 0, fumbles: 0 },
         receiving: { receptions: 8, yards: 137, touchdowns: 2, fumbles: 0 },
+        return: {
+          kickreturn: { returns: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+          puntreturn: { returns: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+        },
       }
     }
 
@@ -86,7 +93,14 @@ describe('Scoring', function () {
       team: 'San Francisco',
       stats: {
         fieldgoals: { attempts: 3, made: 2 },
-        xp: { attempts: 2, made: 2 }
+        xp: { attempts: 2, made: 2 },
+        passing: { attempts: 0,completions: 0,yards: 0,touchdowns: 0,interceptions: 0},
+        rushing: { attempts: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+        receiving: { receptions: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+        return: {
+          kickreturn: { returns: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+          puntreturn: { returns: 0, yards: 0, touchdowns: 0, fumbles: 0 },
+        },
       }
     }
 
